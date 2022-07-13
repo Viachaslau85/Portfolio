@@ -1,0 +1,17 @@
+An asynchronous web scraper to collect and clean up items from the https://interlamp.by/ website.
+
+Features:
+1. The list of proxies used in the tuple proxies function get_random_proxy is filled with any number of working proxies according to the specified pattern
+(If you want for convenience, you can either fill it manually by typing from the console, or by reading from txt, csv or xlsx files. However, be careful, because reading files is a blocking operation, and making such changes may cause a failure of the scrapper. To avoid this, I suggest you read the documentation at this URL https://docs.python.org/3/library/asyncio-task.html#id10);
+
+2. The number of pages in each of the two directories and, consequently, the total number of items to be scraped is determined automatically in the functions get_total_pages and get_total_pages_outdoor;
+
+3. To avoid blocking, the get_random_headers function in tuple desktop_agents gathers the most common user-agents, which are randomly substituted into the final header. If you plan to use this code as a base for scrapper writing for non-Russian sites, pay attention to accept-language in header;
+
+4. Each time you access the donor site, there is a random and independent of each other choice of user-agent and proxy-server, which when combined gives quite a lot of variety and prevents the server to detect parsing and block us;
+
+5. The result of scraping is an xlsx file with a certain set of columns and no indexes. This is the customer's requirement, as the file must be used to automatically load and update information about products already existing on the site through the module installed on the client's site, which requires exactly this structure. For this purpose, the pandas library was used to create a data frame, and then the resulting xlsx file was created from the created data frame using the to_excel function applied to it. If necessary, by changing the make_file_excel function you can change the number and name of columns, sheets, file name and return indexes or even get a csv or txt file. An example of the resulting file can also be found in the project;
+
+6. Errors in the filling of the donor site such as incorrect reference to the product, lack of status, lack of price and so on are collected in a separate file errors.txt, in which the url of the page and type of error is specified. Thus gathering information from the site you can improve the quality of the acceptor site. For example, when scraping it turned out that the donor site ostutvatsya in the list of brands of two brands, although the goods of these brands on the site are. The customer, being the official distributor of the owner of the donor site has received important information and added information about these brands on your site, which had a positive impact on the seo site;
+
+7. Information about technical errors such as forced connection breakage by the server and others are collected in the file system_log.txt. Thanks to such logging you can trace, for example, not working proxy-server or error in function (errors are processed by means of try - except and in a log it is specified in what function there was an error).
