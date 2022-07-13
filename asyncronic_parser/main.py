@@ -61,14 +61,13 @@ async def get_random_headers():
 
 
 async def get_random_proxy():
-    proxies = ('http://viachaslau85:V6m1WyL@217.21.55.3:45785',
-               'http://viachaslau85:V6m1WyL@185.180.108.82:45785',
-               'http://viachaslau85:V6m1WyL@45.135.132.100:45785',
-               # 'http://viachaslau85:V6m1WyL@92.62.115.24:45785',
-               'http://viachaslau85:V6m1WyL@109.172.114.231:45785',
-               'http://viachaslau85:V6m1WyL@194.187.123.61:45785',
-               'http://viachaslau85:V6m1WyL@89.191.231.145:45785',
-               'http://viachaslau85:V6m1WyL@185.156.177.126:45785',
+    proxies = ('http://login:password@proxy-server:port_for_HTTP',
+               'http://login:password@proxy-server:port_for_HTTP', 
+               'http://login:password@proxy-server:port_for_HTTP',
+               'http://login:password@proxy-server:port_for_HTTP',
+               'http://login:password@proxy-server:port_for_HTTP',
+               'http://login:password@proxy-server:port_for_HTTP',
+               'http://login:password@proxy-server:port_for_HTTP'
                )
 
     random_proxy = choice(proxies)
