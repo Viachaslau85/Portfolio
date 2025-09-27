@@ -1,10 +1,10 @@
 	Problem:
-	The client uses a government website to sell goods in procurement procedures using budget funds and must sign a large number of contracts 
-in their personal account using an electronic key. There are no more than three working days to sign the contract. If the contract is not 
-signed within three working days, the client will be suspended from budget-funded procurement for three years for evading the signing of 
-the contract. The main problem is that, in addition to notifications about contracts, the user's personal account receives a large number 
-of other system messages due to the peculiarities of the website, which spam the section, cannot be sorted, and make it possible to miss 
-a message related to the signing of a contract. Approximately 200-300 messages are received.
+	The client uses a government website to sell goods in procurement procedures using budget funds and must sign a large number of 
+contracts in their personal account using an electronic key. There are no more than three working days to sign the contract. If the 
+contract is not signed within three working days, the client will be suspended from budget-funded procurement for three years for 
+evading the signing of the contract. The main problem is that, in addition to notifications about contracts, the user's personal 
+account receives a large number of other system messages due to the peculiarities of the website, which spam the section, cannot be 
+sorted, and make it possible to miss a message related to the signing of a contract. Approximately 200-300 messages are received.
 	In addition, in order for the contract to be signed, depending on its amount, it is necessary to: 
 1) Declare compliance with legal requirements 
 and upload documents; 
