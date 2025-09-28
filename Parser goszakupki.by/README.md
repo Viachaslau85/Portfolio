@@ -9,7 +9,9 @@ sorted, and make it possible to miss a message related to the signing of a contr
 1) Declare compliance with legal requirements 
 and upload documents; 
 2) Wait for notification that the client is eligible and the application has been approved; 
-3) Make the payment; 4) Wait for the payment to be confirmed; 5) Review the contract; 
+3) Make the payment;
+4) Wait for the payment to be confirmed;
+5) Review the contract; 
 6) If there are errors in the contract, write an objection requesting that they be corrected; 
 7) Wait for a new version of the contract and sign it, either sign it without writing an objection, or write a repeat objection and sign 
 it after all inaccuracies have been corrected. (There are also agreements ready for signing immediately after posting.)
@@ -40,10 +42,8 @@ simulates human behavior on the site, and tasks in loops are divided into chunks
 7) User notifications about the appearance of new contracts with a particular status, as well as about changes in the status of existing contracts in the cache, are 
 carried out by means of a pop-up window that appears on top of all other windows and is accompanied by an audible signal, which varies depending on the content of the 
 pop-up window
-8) Popup has three distinct sections containing links directly to the contract page: 1) Ready for signing — all actions have been completed, or no action is required; 2) 
-Requires application - you need to go from the pop-up to the contract card and submit an application for compliance with legal requirements, attaching the necessary documents 
-and signing the application with an electronic key; 3) Pending - the application has not yet been reviewed by the customer and/or payment has not yet been made.
-9) When transitioning from one status to another, the user also receives an audio notification along with a pop-up notification.
+8) Popup has three distinct sections containing links directly to the contract page: 1) Ready for signing — all actions have been completed, or no action is required; 2) Requires application - you need to go from the pop-up to the contract card and submit an application for compliance with legal requirements, attaching the necessary documents and signing the application with an electronic key; 3) Pending - the application has not yet been reviewed by the customer and/or payment has not yet been made.
+10) When transitioning from one status to another, the user also receives an audio notification along with a pop-up notification.
 
 	This crawler solves the problem of controlling a large number of messages by selecting and aggregating only those that are necessary in the context of the task and displaying 
 a noticeable message to the user. This prevents the client from being included in the list of companies not allowed to participate in public procurement, as well as maintaining 
